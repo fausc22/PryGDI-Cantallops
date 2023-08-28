@@ -27,8 +27,6 @@ namespace PryGDI_Cantallops
         private void btnDibujar_Click(object sender, EventArgs e)
         {
             btnDibujar.Hide();
-            lienzo = contenedor.CreateGraphics();
-            lienzo.DrawRectangle(lapiz, 10, 50, 308, 388);
             temporizador.Enabled = true;
         }
 
@@ -43,9 +41,10 @@ namespace PryGDI_Cantallops
 
         private void temporizador_Tick(object sender, EventArgs e)
         {
-            ejeX = aleatorioX.Next(0, 500);
-            ejeY = aleatorioY.Next(0, 700);
-            lienzo.DrawRectangle(lapiz, ejeX, ejeY, 150, 70);
+            ejeX = aleatorioX.Next(0, 798);
+            ejeY = aleatorioY.Next(0, 449);
+            picNave.Location = new Point(ejeX, 449);
+            picPelota.Location = new Point(ejeX, ejeY);
         }
 
         

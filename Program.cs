@@ -16,7 +16,7 @@ namespace PryGDI_Cantallops
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmGDI());
+            Application.Run(new frmJuego());
         }
     }
 }
